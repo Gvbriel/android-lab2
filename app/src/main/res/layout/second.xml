@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+	
+	<TextView
+			android:text="Imie"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintBaseline_toBaselineOf="@+id/input_imie"/>
+	<EditText
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:inputType="textPersonName"
+			android:id="@+id/input_imie" tools:layout_editor_absoluteY="4dp"
+			app:layout_constraintStart_toEndOf="@+id/textView" app:layout_constraintEnd_toEndOf="parent"/>
+	<TextView
+			android:text="Nazwisko"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView2"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintBaseline_toBaselineOf="@+id/input_nazwisko"/>
+	<EditText
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:inputType="textPersonName"
+			android:ems="10"
+			android:id="@+id/input_nazwisko"
+			app:layout_constraintStart_toEndOf="@+id/textView2"
+			app:layout_constraintTop_toBottomOf="@+id/input_imie"
+			app:layout_constraintEnd_toEndOf="parent"/>
+	<TextView
+			android:text="Oceny"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/textView3"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintBaseline_toBaselineOf="@+id/input_oceny"/>
+	<EditText
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:inputType="textPersonName"
+			android:ems="10"
+			android:id="@+id/input_oceny"
+			app:layout_constraintStart_toEndOf="@+id/textView3"
+			app:layout_constraintTop_toBottomOf="@+id/input_nazwisko"
+			app:layout_constraintEnd_toEndOf="parent"/>
+	<Button
+			android:text="Pokaz oceny"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/button_oceny"
+			app:layout_constraintTop_toBottomOf="@+id/input_oceny" app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

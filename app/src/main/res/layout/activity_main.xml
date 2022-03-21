@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".MainActivity" android:orientation="vertical">
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		<TextView
+				android:text="Imie"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/textView4"/>
+		<EditText
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPersonName"
+				android:id="@+id/input_imie" android:hint="Imie"/>
+	</LinearLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		<TextView
+				android:text="Nazwisko"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/textView5"/>
+		<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:inputType="textPersonName"
+				android:ems="10"
+				android:id="@+id/input_nazwisko" android:layout_weight="1" android:hint="Nazwisko"/>
+	</LinearLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		<TextView
+				android:text="Liczba ocen"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/textView6"/>
+		<EditText
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:inputType="number"
+				android:ems="10"
+				android:id="@+id/input_oceny" android:layout_weight="1" android:hint="15"/>
+	</LinearLayout>
+	<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		<Button
+				android:text="Oceny"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/button_oceny"/>
+	</LinearLayout>
+	<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:id="@+id/text_podane"/>
+</LinearLayout>
