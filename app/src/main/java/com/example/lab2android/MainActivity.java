@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
             public void afterTextChanged(Editable editable) {
                 if(!editable.toString().isEmpty()){
 //                    int input = Integer.parseInt(editable.toString());
+
                     if(Integer.parseInt(editable.toString()) <= 5 || Integer.parseInt(editable.toString()) >= 15){
                         input_oceny.setError("Liczba musi byc miedzy 5 a 15!");
                     }else{
